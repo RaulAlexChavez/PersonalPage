@@ -1,0 +1,21 @@
+body {
+    width: 100%;
+    background-color: #1b2a4e;
+    color: #FFFFFF;
+    min-height: 50vh;
+}
+
+#main-content {
+    margin-left: 8%;
+    margin-top: 10px;
+}
+
+.my-footer {
+    min-height: 60px;
+    min-width: 90%;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}

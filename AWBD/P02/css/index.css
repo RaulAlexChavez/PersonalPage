@@ -1,0 +1,80 @@
+* {
+    font-family: "Verdana";
+}
+
+body {
+    margin: 10px;
+}
+
+/* --- Images ---*/
+#QueenBandMembers {
+    width: 400px;
+    height: auto;
+}
+
+/* --- Table Discografía --- */
+caption {
+    caption-side: top;
+    color: #000;
+    font-size: 14px;
+}
+
+table.DiscExits, th.DiscExits, td.DiscExits {
+    border: 1px solid black;
+}
+
+th.DiscExits, td.DiscExits {
+    padding: 10px;
+    font-size: 12px;
+}
+
+p, td, li {
+    color: #000;
+    font-size: 12px;
+}
+
+th.DiscExits {
+    color: white;
+    font-size: 12px;
+    background-color: #666;
+}
+
+td.DiscExits {
+    background-color: #fff;
+}
+
+tfoot>tr>td.DiscExits {
+    background-color: #ccc;
+}
+
+/* --- Headers --- */
+h1 {
+    color: #333;
+    font-size: 20px;
+}
+
+h2 {
+    color: #666;
+    font-size: 16px;
+}
+
+/* --- Links --- */
+a {
+    font-size: 12px;
+    
+}
+
+a:link {
+    color: blue;
+    -webkit-transition: color 0.5s;
+}
+
+a:visited {
+    color: purple;
+    -webkit-transition: color 0.5s;
+}
+
+a:hover {
+    color: cornflowerblue;
+    -webkit-transition: color 0.1s;
+}

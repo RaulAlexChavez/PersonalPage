@@ -1,0 +1,23 @@
+body {
+    margin: 10px;
+}
+
+/* --- Links --- */
+a {
+    font-size: 20px; 
+}
+
+a:link {
+    color: blue;
+    -webkit-transition: color 0.5s;
+}
+
+a:visited {
+    color: purple;
+    -webkit-transition: color 0.5s;
+}
+
+a:hover {
+    color: cornflowerblue;
+    -webkit-transition: color 0.1s;
+}

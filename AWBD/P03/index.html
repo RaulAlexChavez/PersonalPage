@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Formulario</title>
+    </head>
+    
+    <body>
+        
+        <form action="">
+            <fieldset>
+                <legend>Datos del Pokémon Inicial</legend>
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name" onkeyup="textUppercase(this.form)"><br>
+                <label for="type">Tipo:</label><br>
+                <select name="type" onchange="validatePokemonType(this.form)">
+                    <option value="grass">Grass</option>
+                    <option value="electric">Electric</option>
+                    <option value="water">Water</option>
+                    <option value="fire">Fire</option>
+                </select>
+                <br>
+                <label for="pokedexEntry">Entrada de la Pokédex</label><br>
+                <textarea id="pokedexEntry" name="pokedexEntry" onkeyup="swapSpacesInText(this.form, '%')"></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Botones</legend>
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+        
+        <script src="js/myscript.js"></script>
+    </body>
+</html>

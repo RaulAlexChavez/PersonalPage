@@ -17,7 +17,35 @@ h1 {
 
 h2 {
     color: #cccccc;
-    font-size: 2px;
+}
+
+div.testimony-container {
+    padding-top: 10vh;
+}
+
+div.testimony {
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-bottom: 5vh;
+}
+
+img.testimony {
+    height: 20vh;
+}
+
+p.testimony {
+    color: #cccccc;
+    font-size: 4vh;
+}
+
+div.purchase {
+    margin-left: 12vw;
+    margin-right: 12vw;
+}
+
+div.purchase-info {
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 iframe {

@@ -19,25 +19,15 @@
                 <div class="container">
                     <div class="align-items-center justify-content-center justify-content-lg-start">
                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="#hero-video-id" class="nav-link px-2 text-white">iPhone Pro 14</a></li>
-                            <li><a href="#hero-image-id" class="nav-link px-2 text-white">Features</a></li>
+                            <li><a href="#hero-image-id" class="nav-link px-2 text-white">iPhone 14 Pro</a></li>
+                            <li><a href="#features-id" class="nav-link px-2 text-white">Features</a></li>
+                            <li><a href="#hero-video-id" class="nav-link px-2 text-white">Presentation</a></li>
                             <li><a href="#testimony-id" class="nav-link px-2 text-white">Testimonies</a></li>
                             <li><a href="#purchase-id" class="nav-link px-2 text-white">Purchase</a></li>
                         </ul>
                     </div>
                 </div>
             </header>
-
-            <!-- Video -->
-            <section id="hero-video-id" class="hero-video text-center">
-                <iframe
-                    src="https://www.youtube.com/embed/FT3ODSg1GFE?autoplay=1&controls=0"
-                    title="YouTube video player"
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </section>
 
             <!-- Image and Title -->
             <div id="hero-image-id" class="hero-image text-secondary px-4 py-5 text-center">
@@ -49,33 +39,50 @@
             </div>
 
             <!-- Features -->
-            <div class="align-items-center justify-content-center">
-                <div class="feature d-flex align-items-center justify-content-center">
+            <div id="features-id" class="align-items-center justify-content-center">
+                <div class="feature reveal d-flex align-items-center justify-content-center">
                     <i class="feature bi bi-camera"></i>
                     <p class="feature px-5">Profesional Quality Camera</p>
                 </div>
-                <div class="feature d-flex align-items-center justify-content-center">
+                <div class="feature reveal d-flex align-items-center justify-content-center">
                     <i class="feature bi bi-speedometer"></i>
                     <p class="feature px-5">Excelling Performance</p>
                 </div>
-                <div class="feature d-flex align-items-center justify-content-center">
+                <div class="feature reveal d-flex align-items-center justify-content-center">
                     <i class="feature bi bi-battery"></i>
                     <p class="feature px-5">High-durability battery</p>
                 </div>
+                <div class="feature reveal d-flex align-items-center justify-content-center">
+                    <i class="feature bi bi-emoji-smile"></i>
+                    <p class="feature px-5">Intuitive and easy to use</p>
+                </div>
             </div>
+            <br><br>
+
+             <!-- Video -->
+             <section id="hero-video-id" class="hero-video text-center">
+                <iframe
+                    class="reveal"
+                    src="https://www.youtube.com/embed/FT3ODSg1GFE?"
+                    title="YouTube video player"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </section>
             
             <!-- Testimonies -->
             <div id="testimony-id" class="testimony-container">
                 <h1 class="display-5 fw-bold text-white text-center">Listen to our satisfied clients</h1><br><br>
-                <div class="testimony d-flex align-items-center">
+                <div class="testimony reveal d-flex align-items-center">
                     <img class="testimony" src="https://cdn-icons-png.flaticon.com/512/219/219986.png">
                     <p class="testimony px-5">El iPhone Pro sí se pasa de Pro. Lo uso para fotografiar a mis michis y veo más en HD la foto que con mis ojos. La batería ya no dura 5m como en otros iPhones, dura 6m.</p>
                 </div>
-                <div class="testimony d-flex align-items-center">
+                <div class="testimony reveal d-flex align-items-center">
                     <img class="testimony" src="https://cdn-icons-png.flaticon.com/512/219/219969.png">
                     <p class="testimony px-5">La mejor compra de mi vida. Eso creí con el iPhone 13, pero el iPhone 14 Pro definitivamente superó a su predecesor. Va tan rápido y fluído que no me lo puedo creer. Ya quiero que salga el iPhone 15 Pro Max.</p>
                 </div>
-                <div class="testimony d-flex align-items-center">
+                <div class="testimony reveal d-flex align-items-center">
                     <img class="testimony" src="https://charity13.ca/wp-content/uploads/2021/05/adult-women.png">
                     <p class="testimony px-5">Es tan bueno y lo uso tanto que no sé qué haría sin él. Es más, me compré 2. Me compraría 3, pero solo tengo 2 manos.</p>
                 </div>
@@ -226,5 +233,6 @@
         </div>    
         <!-- Bootstrap JS Bulde with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script src="js/revealer.js"></script>
     </body>
 </html>

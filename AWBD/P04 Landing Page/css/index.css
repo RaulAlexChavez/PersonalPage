@@ -5,29 +5,51 @@
 
 @keyframes image-fade-in {
     from {height: 4vh; opacity: 0%;}
-    to {height: 40vh; opacity: 100%;}
+    to {height: 70vh; opacity: 100%;}
 }
 
 img.iPhoneMain {
-    height: 40vh;
+    height: 70vh;
     animation-name: image-fade-in;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 div.hero-image {
     background-color: black;
 }
 
-@keyframes feature-fade-in {
-    0% {margin-left: -10vw; opacity: 0%;}
-    60% {margin-left: -10vw; opacity: 0%;}
-    100% {margin-left: none; opacity: 100%;}
+div.feature.reveal {
+    font-size: 8vh;
+    color: #cccccc;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    opacity: 0;
+    margin-left: -1vw;
+    transition: 1s all ease;
 }
 
-div.feature {
-    font-size: 5vh;
+div.feature.reveal.active {
+    font-size: 8vh;
     color: #cccccc;
-    animation: feature-fade-in 8s;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    opacity: 1;
+    margin-left: 0;
+}
+
+iframe.reveal {
+    width: 90vw;
+    height: 90vh;
+    opacity: 0;
+    margin-left: -1vw;
+    transition: 1s all ease;
+}
+
+iframe.reveal.active {
+    width: 90vw;
+    height: 90vh;
+    opacity: 1;
+    margin-left: 0;
 }
 
 h1 {
@@ -42,10 +64,19 @@ div.testimony-container {
     padding-top: 10vh;
 }
 
-div.testimony {
+div.testimony.reveal {
+    padding-left: 6vw;
+    padding-right: 7vw;
+    padding-bottom: 5vh;
+    transition: 1s all ease;
+    opacity: 0;
+}
+
+div.testimony.reveal.active {
     padding-left: 7vw;
     padding-right: 7vw;
     padding-bottom: 5vh;
+    opacity: 1;
 }
 
 img.testimony {
@@ -65,16 +96,4 @@ div.purchase {
 div.purchase-info {
     margin-left: 4vw;
     margin-right: 4vw;
-}
-
-@keyframes video-fade-in {
-    0% {height: 0vw; width: 0vw;}
-    60% {height: 0vw; width: 0vw;}
-    100% {height: 90vh; width: 90vw;}
-}
-
-iframe {
-    width: 90vw;
-    height: 90vh;
-    animation: video-fade-in 4s;
 }
